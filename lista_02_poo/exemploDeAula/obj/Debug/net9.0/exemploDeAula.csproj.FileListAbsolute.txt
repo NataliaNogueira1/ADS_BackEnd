@@ -1,0 +1,14 @@
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\bin\Debug\net9.0\exemploDeAula.exe
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\bin\Debug\net9.0\exemploDeAula.deps.json
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\bin\Debug\net9.0\exemploDeAula.runtimeconfig.json
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\bin\Debug\net9.0\exemploDeAula.dll
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\bin\Debug\net9.0\exemploDeAula.pdb
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\obj\Debug\net9.0\exemploDeAula.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\obj\Debug\net9.0\exemploDeAula.AssemblyInfoInputs.cache
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\obj\Debug\net9.0\exemploDeAula.AssemblyInfo.cs
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\obj\Debug\net9.0\exemploDeAula.csproj.CoreCompileInputs.cache
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\obj\Debug\net9.0\exemploDeAula.dll
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\obj\Debug\net9.0\refint\exemploDeAula.dll
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\obj\Debug\net9.0\exemploDeAula.pdb
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\obj\Debug\net9.0\exemploDeAula.genruntimeconfig.cache
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BE\lista_02_poo\exemploDeAula\obj\Debug\net9.0\ref\exemploDeAula.dll
