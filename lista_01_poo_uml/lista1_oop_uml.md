@@ -45,7 +45,7 @@ Para mais informações acesse [Aula 01: Paradigma POO.](https://cainaantunes.no
             -Pelagem: string
             -Sexo: char
             +Andar(incrementoX: int, direcao: string): void
-            +Sentar(tempo: int, sprite: Image): void
+            +Sentar(tempo: int, sprite: image): void
             +Pular(incrementoY: int, sprite: image): void
         }
     ```
@@ -77,10 +77,12 @@ Para mais informações acesse [Aula 01: Paradigma POO.](https://cainaantunes.no
         class Produto {
             -Nome: string
             -Preco: double
-            -Estoque:int
+            -Estoque: int
+            -Ativo: boolean
             +Vender(qtd: int): boolean
-            +Repor(qtd: int): void
-            +Deletar(nome: string): boolean
+            +Repor(qtd: int): boolean
+            +Ativar(ativo: boolean): boolean
+            +Desativar(ativo: boolean): boolean
         }
     ```
 
@@ -94,11 +96,15 @@ Para mais informações acesse [Aula 01: Paradigma POO.](https://cainaantunes.no
         classDiagram
         class Livro {
             -Nome: string
+            -Autor: string
+            -ISBN: string
             -Preco: double
             -Estoque:int
+            -Ativo: boolean
             +Emprestar(qtd: int): boolean
-            +Repor(qtd: int): void
-            +Deletar(nome: string): boolean
+            +Repor(qtd: int): boolean
+            +Ativar(ativo: boolean): boolean
+            +Desativar(ativo: boolean): boolean
         }
     ```
 
@@ -108,25 +114,27 @@ Para mais informações acesse [Aula 01: Paradigma POO.](https://cainaantunes.no
 
         ```mermaid
             classDiagram
-            class Conta {
-                -Id: tipo
-                -CPF:
-                -Nome
-                -Senha
-                +Saldo
-                +TrocarSenha
-                +Bloquear
-                +Tranferir(parametro: tipo): tipoDeRetorno
-                +Deposita
-                +Emprestar(qtd: int): boolean
-                -Deletar(nome: string): boolean
-            }
-            class Cartão {
-                -Número: string
-                -Limite: double
-                -Estoque:int
-                -Deletar(nome: string): boolean
-        }
+                class Conta {
+                    -Id: int
+                    -CPF: string
+                    -Nome: string
+                    -Senha: string
+                    -Ativo: boolean
+                    +Saldo(): double
+                    +TrocarSenha(senha: string): boolean
+                    +Bloquear(ativo: boolean): boolean
+                    +Desbloquear(ativo: boolean): boolean
+                    +Tranferir(valor: double, contaDestino: Conta): boolean
+                    +Deposita(valor: double): boolean
+                    +Emprestar(valor: double): boolean
+                    -Deletar(id: int): boolean
+                }
+
+                class Cartão {
+                    -Número: string
+                    -Limite: double
+                    +Bloquear(id: int): boolean
+                }
         ```
 
 7.  **Usuário de Sistema:**<br>
@@ -135,13 +143,15 @@ Para mais informações acesse [Aula 01: Paradigma POO.](https://cainaantunes.no
 
         ```mermaid
             classDiagram
-            class NomeDaClasse {
-                -NomeDoAtributo: tipo
-                +CriarUsuario
-                +Update
-                +AlterarSenha
-                +Login
-                +Logout
+            class Usuario {
+                -Id: int
+                -CPF: int
+                -Nome: string
+                -Senha: string
+                +Visualizar(id: int): boolean
+                +CriarUsuario(id: int): boolean
+                +Update(id: int): boolean
+                -Deletar(id: int): boolean
             }
         ```
 
@@ -151,9 +161,13 @@ Para mais informações acesse [Aula 01: Paradigma POO.](https://cainaantunes.no
 
         ```mermaid
             classDiagram
-            class NomeDaClasse {
-                -Produtos: []Produto
-                +NomeDoMetodo(parametro: tipo): tipoDeRetorno
+            class Pedido {
+                -Id: int
+                -Usuario: int
+                -DateTime: datetime
+                -Total: double
+                -Produtos: List<Produto>
+                +Visualizar(id: int, usuario: int): boolean
             }
         ```
 
@@ -163,12 +177,11 @@ Para mais informações acesse [Aula 01: Paradigma POO.](https://cainaantunes.no
 
         ```mermaid
             classDiagram
-            class NomeDaClasse {
-                -Token: tipo
-                -DataTempo: DateTime
-                -Ativo
-                +Começo(parametro: tipo): tipoDeRetorno
-                +Fim
+            class SessaoUsuario {
+                -Token: string
+                -DateTime: datetime
+                +Login(token: string, dateTime): boolean
+                +Logout(token: string, dateTime): boolean
             }
         ```
 
@@ -178,12 +191,24 @@ Para mais informações acesse [Aula 01: Paradigma POO.](https://cainaantunes.no
 
         ```mermaid
             classDiagram
-            class NomeDaClasse {
-                -Name: tipo
+            class Repositorio {
+                -Name: string
                 -Url: string
-                -Owner: User
-                -Colaborador: User
-                -File
-                +CRUD (parametro: tipo): tipoDeRetorno
+                -Owner: Usuario
+                -Colaboradores: List<Usuario>
+                -Files: List<File>
+                +Visualizar(file: string): boolean
+                -Adicionar(file: string): boolean
+                -Update(file: string): boolean
+                -Deletar(file: string): boolean
+            }
+
+            class Usuario {
+                -Id: int
+                -Nome: string
+                -Senha: string
+                +Visualizar(id: int): boolean
+                +Update(id: int): boolean
+                +Deletar(id: int): boolean
             }
         ```
