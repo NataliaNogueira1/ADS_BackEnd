@@ -1,39 +1,30 @@
 ﻿class Program {
-    static void Main(string[] args){
-        // Criação de objetos
-        ContaBancaria c1 = new ContaBancaria(1, "Natália");
-        ContaBancaria c2 = new ContaBancaria(2, "Marcela");
+    static void Main(string[] args)
+    {
+        // Criação de objeto
+        Arquivo arquivo1 = new Arquivo(1, "arquivo.txt", "");
+
+        Console.WriteLine("\nOriginal:\n");
+
+        Console.WriteLine(arquivo1);
 
         // Operações
-        Console.WriteLine("Original:");
+        Console.WriteLine("Abrir:\n");
+        arquivo1.Abrir();
 
-        Console.WriteLine(c1);
-        Console.WriteLine(c2);
+        Console.WriteLine("\nEditar:\n");
+        arquivo1.Editar("\nTeste de conteúdo 1.");
+        Console.WriteLine(arquivo1);
+        arquivo1.Editar("\nTeste de conteúdo 2!");
+        Console.WriteLine(arquivo1);
 
-        Console.WriteLine("Pós depósito:");
-        c1.Depositar(350, 1);
-        c2.Depositar(349, 2);
+        Console.WriteLine("\nRenomear:\n");
+        arquivo1.Renomear("file.txt");
+        Console.WriteLine(arquivo1);
 
-        Console.WriteLine(c1);
-        Console.WriteLine(c2);
-
-        Console.WriteLine("Pós saque:");
-        c1.Sacar(100, 1);
-        c2.Sacar(5, 2);
-
-        Console.WriteLine(c1);
-        Console.WriteLine(c2);
-
-        // Console.WriteLine("Pós testes adicionais:");
-
-        // c1.Depositar(-50, 1);
-        // c2.Titular = "Mar";
-        // c2.Id = 4;
-
-        // Console.WriteLine(c1);
-        // Console.WriteLine(c2);
-
-        // Resultado: não rodou :)
+        Console.WriteLine("Limpar:\n");
+        arquivo1.Limpar();
+        Console.WriteLine(arquivo1);
 
     }
 }

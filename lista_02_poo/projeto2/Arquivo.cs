@@ -1,53 +1,56 @@
 using System.Dynamic;
 
-public class ContaBancaria
+public class Arquivo
 {
     //Atributos
-
-    - Name : string
-    - Size : int
-    - Content : string
-    + Open () : string
-    + Edit (string newContent) : void
-    + Rename (string newName) : bool
-    + Clear () : void
-
     public int Id { get; private set; }
-    public double Saldo { get; private set; }
-    public string Titular { get; private set; }
+    public string Nome { get; private set; }
+    public string Conteudo { get; private set; }
+    public int Tamanho
+    {
+        get { return Conteudo.Length * 8; }
+    }
 
     //Construtor
-    public ContaBancaria(int id, string titular)
+    public Arquivo(int id, string nome, string conteudo)
     {
         Id = id;
-        Saldo = 0.0;
-        Titular = titular;
+        Nome = nome;
+        Conteudo = conteudo;
     }
 
     //Métodos
-    public bool Depositar(double valor, int id)
-    {
-        if (Id != id || valor <= 0)
-            return false;
 
-        Saldo += valor;
+    public string Abrir()
+    {
+        string informacoes = $"Nome: {Nome}\nTamanho: {Tamanho} bits\nConteúdo:\n{Conteudo}";
+        Console.WriteLine(informacoes);
+        return informacoes;
+    }
+
+    public bool Editar(string novoConteudo)
+    {
+        Conteudo += novoConteudo;
         return true;
     }
 
-    public bool Sacar(double valor, int id)
+    public bool Renomear(string novoNome)
     {
-        if (Id != id || Saldo < valor || valor <= 0)
+        if (string.IsNullOrWhiteSpace(novoNome))
             return false;
 
-        Saldo -= valor;
+        Nome = novoNome;
+        return true;
+    }
+
+    public bool Limpar()
+    {
+        Conteudo = "";
         return true;
     }
     
-// ToString
-    public override string ToString()
-    {
-        return $"\nId: {Id}\nTitular: {Titular}\nSaldo: {Saldo}\n";
+    public override string ToString() {
+        return $"Nome: {Nome}\nTamanho: {Tamanho} bits\nConteúdo: {Conteudo}\n";
     }
 
 }
-
