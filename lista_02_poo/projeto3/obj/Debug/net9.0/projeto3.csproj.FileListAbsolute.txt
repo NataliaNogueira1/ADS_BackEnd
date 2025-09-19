@@ -13,3 +13,18 @@ C:\Users\Usuario\Desktop\ADS\semestre_2\ADS_BackEnd\lista_02_poo\projeto3\obj\De
 C:\Users\Usuario\Desktop\ADS\semestre_2\ADS_BackEnd\lista_02_poo\projeto3\obj\Debug\net9.0\projeto3.pdb
 C:\Users\Usuario\Desktop\ADS\semestre_2\ADS_BackEnd\lista_02_poo\projeto3\obj\Debug\net9.0\projeto3.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\ADS\semestre_2\ADS_BackEnd\lista_02_poo\projeto3\obj\Debug\net9.0\ref\projeto3.dll
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\bin\Debug\net9.0\projeto3.exe
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\bin\Debug\net9.0\projeto3.deps.json
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\bin\Debug\net9.0\projeto3.runtimeconfig.json
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\bin\Debug\net9.0\projeto3.dll
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\bin\Debug\net9.0\projeto3.pdb
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\obj\Debug\net9.0\projeto3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\obj\Debug\net9.0\projeto3.AssemblyInfoInputs.cache
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\obj\Debug\net9.0\projeto3.AssemblyInfo.cs
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\obj\Debug\net9.0\projeto3.csproj.CoreCompileInputs.cache
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\obj\Debug\net9.0\projeto3.sourcelink.json
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\obj\Debug\net9.0\projeto3.dll
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\obj\Debug\net9.0\refint\projeto3.dll
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\obj\Debug\net9.0\projeto3.pdb
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\obj\Debug\net9.0\projeto3.genruntimeconfig.cache
+C:\Users\Natália Nogueira\Desktop\ADS\2º semestre\ADS_BackEnd\lista_02_poo\projeto3\obj\Debug\net9.0\ref\projeto3.dll
