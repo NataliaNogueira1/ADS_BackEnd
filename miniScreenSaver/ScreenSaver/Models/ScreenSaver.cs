@@ -24,10 +24,7 @@ public class ScreenSaver : Form
         ControlTimer.Tick += (s, e) => // a cada 16 milisegundos apaga tudo e coloca novas formas na tela
         {
             // ****** Mova suas formas geométricas aqui ******
-            r.Move();
-            x = ClientSize.Height;
-            y = ClientSize.Width;
-            r.Move(ClientSize.width, ClientSize.height, )
+            r.Move(ClientSize.Width, ClientSize.Height);
             // ***********************************************
             Invalidate(); // Foça a tela a ser redesenhada.
         }; // Função anônima disparada pelo ControlTimer a cada Interval (ms)
