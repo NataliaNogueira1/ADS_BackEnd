@@ -12,9 +12,11 @@ public abstract class Shape
     protected int Width;
     protected int Height;
     protected Color ColorShape;
+    private Random rnd = new Random();
 
     //Construtor
-    public Shape(int x, int y, Color color, int width, int height) {
+    public Shape(int x, int y, Color color, int width, int height)
+    {
         X = x;
         Y = y;
         SpeedX = 9;
@@ -27,11 +29,15 @@ public abstract class Shape
     //Métodos
     public void Move(int xLimit, int yLimit)
     {
-        if (X > xLimit - Width || X < 0)
+        if (X > xLimit - Width || X < 0){
             SpeedX = -SpeedX;
+            ColorGenerate();
+        }
 
-        if (Y > yLimit - Height || Y < 0)
+        if (Y > yLimit - Height || Y < 0){
             SpeedY = -SpeedY;
+            ColorGenerate();
+        }
 
         X += SpeedX;
         Y += SpeedY;
@@ -39,8 +45,9 @@ public abstract class Shape
     private void ColorGenerate()
     {
         // Color.FromArgb(red, green, blue)
-        // trocar para cor aleatoria (usar random)
+        // trocar para cor aleatoria (usar random) toda vez que bater na borda
         // criar metodo privado dentro da classe shape
+        ColorShape = Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
     }
     //ToString
     public override string ToString() {
