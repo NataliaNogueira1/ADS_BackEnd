@@ -9,6 +9,10 @@ public class MyRectangle : Shape
     {
     }
 
+    public MyRectangle(int screenWidth, int screenHeight) : base(screenWidth, screenHeight)
+    {
+    }
+
     //Métodos
     
     public void Draw(Graphics g)

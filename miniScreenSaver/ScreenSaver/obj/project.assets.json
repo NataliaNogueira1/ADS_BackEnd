@@ -8,19 +8,19 @@
     "net9.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\Natália Nogueira\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\ADS\\semestre_2\\ADS_BackEnd\\miniScreenSaver\\ScreenSaver\\ScreenSaver.csproj",
+      "projectUniqueName": "C:\\Users\\Natália Nogueira\\Desktop\\ADS\\2º semestre\\ADS_BackEnd\\miniScreenSaver\\ScreenSaver\\ScreenSaver.csproj",
       "projectName": "ScreenSaver",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\ADS\\semestre_2\\ADS_BackEnd\\miniScreenSaver\\ScreenSaver\\ScreenSaver.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\ADS\\semestre_2\\ADS_BackEnd\\miniScreenSaver\\ScreenSaver\\obj\\",
+      "projectPath": "C:\\Users\\Natália Nogueira\\Desktop\\ADS\\2º semestre\\ADS_BackEnd\\miniScreenSaver\\ScreenSaver\\ScreenSaver.csproj",
+      "packagesPath": "C:\\Users\\Natália Nogueira\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Natália Nogueira\\Desktop\\ADS\\2º semestre\\ADS_BackEnd\\miniScreenSaver\\ScreenSaver\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Natália Nogueira\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0-windows"
