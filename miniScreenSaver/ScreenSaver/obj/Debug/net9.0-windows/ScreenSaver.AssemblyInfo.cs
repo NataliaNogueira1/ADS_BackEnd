@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScreenSaver")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+437f8b1bfa6ab35b8bfb72f6aea9a31928a432a7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e2ee0965ddc55a106906fe9fd83810c73337b39")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScreenSaver")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScreenSaver")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

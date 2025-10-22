@@ -15,7 +15,7 @@ public class MyRectangle : Shape
 
     //Métodos
     
-    public void Draw(Graphics g)
+    public override void Draw(Graphics g) // o override é por causa do abstratc em shape
     {
         using var brush = new SolidBrush(ColorShape);
         g.FillRectangle(brush, X, Y, Width, Height);

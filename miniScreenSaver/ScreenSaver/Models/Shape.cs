@@ -69,6 +69,9 @@ public abstract class Shape
         ColorShape = Color.FromArgb(Rand.Next(0, 255), Rand.Next(0, 255), Rand.Next(0, 255));
         return ColorShape;
     }
+
+    public abstract void Draw(Graphics g); // obriga os filhos da classe Shape a sempre usar o método Draw
+
     //ToString
     public override string ToString() {
         return $"Pos X: {X}, Pos Y {Y}, Cor: {ColorShape}";
